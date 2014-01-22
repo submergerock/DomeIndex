@@ -1,0 +1,5 @@
+tableName:testTable
+indexName:testIndex
+time:A
+other:B
+other:C

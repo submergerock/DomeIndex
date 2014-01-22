@@ -1,0 +1,4 @@
+tableName:testTable
+column : A , INT,4
+column : B , INT,4
+column : C , STRING,10

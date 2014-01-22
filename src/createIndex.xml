@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<root>
+<app>/TestCreateIndex</app>
+<serverPath>Server</serverPath>
+<serverTmp>Server/tmp</serverTmp>
+<serverCon>Server/conf</serverCon>
+<clientPath>Client</clientPath>
+<clientTmp>Client/Tmp</clientTmp>
+<clientPei>Client/Pei</clientPei>
+<!-- zk连接 路径  -->
+<connectString>cProc12,cProc14,cProc16,cProc18,cProc20,cProc22,cProc24,cProc26,cProc28</connectString>
+<sessionTimeout>10000</sessionTimeout>
+<!-- hdfs地址  -->
+<hdfsURL>hdfs://192.168.1.12:8000</hdfsURL>
+<!-- 通知 目录  -->
+<sourceRoot>/smp/notify</sourceRoot>
+<!-- 轮询时间  -->
+<watchTime>15000</watchTime>
+<!-- 最大最小值目录  -->
+<minAndMaxPath>/smp/cdr_blr/</minAndMaxPath>
+<!-- 数据库前缀  -->
+<databasePrePath>/smp</databasePrePath>
+<!-- 忽略的文件  -->
+<excludeTable>iucsevent,bssapevent</excludeTable>
+<!-- 是否有最大最小值-->
+<maxmin>false</maxmin>
+
+<localLogPath>/cProc/testCreateIndex/FileLog</localLogPath>
+<hdfsAchiveLogPath>/cProcLog</hdfsAchiveLogPath>
+<!-- 创建索引线程数 -->
+<createIndexThreadNumber>5</createIndexThreadNumber>
+
+<!-- 最大合并文件个数 -->
+<oneMachDoWithFileNumber>3</oneMachDoWithFileNumber>
+
+<!-- 是否要睡眠 -->
+<needSleep>FALSE</needSleep>
+
+<!-- 多少条睡眠一次 -->
+<countSleep>10000</countSleep>
+
+<!--  睡眠多久-->
+<sleepSec>500</sleepSec>
+
+<!-- 类型是否为文本 -->
+<isText>false</isText>
+
+<!-- 文本的 分割符 -->
+<split>\t</split>
+
+<!-- 通知目录符合的文件后缀名,你懂的 -->
+<suffix>cdr</suffix>
+
+
+
+<!-- 失败信息保存路径 -->
+<failed>/smp/failed/</failed>
+
+
+
+<!-- 机器 ip所绑定的网卡 -->
+<ip>bond0</ip>
+
+
+<redoInterval>1</redoInterval>
+
+<serverUrl>/TestCreateIndex/URL</serverUrl>
+
+<stepSecond>5</stepSecond>
+
+<port>12345</port>
+
+
+
+
+</root>
